@@ -72,6 +72,12 @@ footer {
 
 .nm {margin-left: 0;}
 
+footer img.nm {
+  margin-right: 30px;
+  margin-top: -16px;
+}
+
+
 
 /* 3. TYPOGRAPHY */
 /* =================================================================== */
@@ -90,7 +96,7 @@ header h1 {
   padding: 0;
 }
 
-header article.description {
+#main article {
   font-size: 200%;
   line-height: 1.5;
 }
@@ -101,10 +107,10 @@ header article.description {
 /* =================================================================== */
 /* =================================================================== */
 
-#main {min-height: 620px; }
+#main { min-height: 500px; }
 
-.ss, .slideshow         { min-height: 620px;}
-.home .placeholder      { height: 600px; overflow: hidden; }
+.ss, .slideshow         { }
+.home .placeholder      { overflow: hidden; }
 .placeholder.red        { background: rgba(183,80,81,1); }
 .placeholder.orange     { background: rgba(195,115,99,1); }
 .placeholder.yellow     { background: rgba(197,192,101,1); }
@@ -114,17 +120,8 @@ header article.description {
 .placeholder.gray       { background: rgba(132,132,120,1); }
 .placeholder.span10.nm  { margin: 0;}
 
-.ssnav a {
-  display: block;
-  font-size: 100px;
-  line-height: 100px;
-  position: relative;
-  text-align: center;
-  z-index: 889;
-}
-
 #pager {
-  margin: 0 0 15px 0;
+  margin: 36px 0 48px 0;
   position: relative;
   text-align: center;
   z-index: 9;
@@ -148,8 +145,8 @@ header article.description {
   -ms-border-radius: 10px;
 }
 
-#pager a.activeSlide { background: rgba(47,41,38,1); }
 #pager a:hover { background: rgba(140,165,115,1); }
+#pager a.activeSlide { background: rgba(197,192,101,1); }
 
 
 

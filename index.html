@@ -35,12 +35,7 @@
   <body class="home">
   
     <header class="container">
-      <h1 class="">The Sustainabilitist Principles (A Manifesto)</h1><!-- END decorative SITE NAME -->
-      <article class="description">
-        <p>
-          Environmentalism’s goal was environmental sustainability. Post-environmentalism’s goal must be true sustainability. I propose a new term for the followers of post-environmentalism: Sustainabilitists. We sustainabilitists shall take over where the environmentalists leave off, moving sustainability from the realm of the environment into all realms. The following principles will help move our ideas and actions into the region of the truly sustainable. We sustainabilitists must allow our designs, strategies and methodologies to evolve and adapt to new ideas. In keeping within its own principles, this manifesto and its concepts will be in a constant state of flux.
-        </p>
-      </article><!-- END intro ¶ -->
+      <h1 class="">The Sustainabilitist Principles <span>(A Manifesto)</span></h1><!-- END decorative SITE NAME -->
     </header>
 
     <div id="main" role="main" class="container">
@@ -49,8 +44,15 @@
       <div class="row ss">
         <div class="slideshow span12">
 
+          <!-- INTRO TEXT -->
+          <article class="description span12 nm">
+            <p>
+              Environmentalism’s goal was environmental sustainability. Post-environmentalism’s goal must be true sustainability. I propose a new term for the followers of post-environmentalism: Sustainabilitists. We sustainabilitists shall take over where the environmentalists leave off, moving sustainability from the realm of the environment into all realms. The following principles will help move our ideas and actions into the region of the truly sustainable. We sustainabilitists must allow our designs, strategies and methodologies to evolve and adapt to new ideas. In keeping within its own principles, this manifesto and its concepts will be in a constant state of flux.
+            </p>
+          </article><!-- END intro ¶ -->
+
           <!-- **** -->
-          <article class="description aphorism span12 nm">
+          <article class="aphorism span12 nm">
               <h1>Agility</h1>
               <p>Change must happen fast—but raw speed alone is not enough. The rapid growth of industrialism got us into this mess; quick, precise and nimble actions now will get us out of it.</p>
           </article>
@@ -162,18 +164,13 @@
           <!-- END APHORISMS -->
         </div>
       </div>
-      <nav class="ssnav">
-        <a href="" class="prev">&laquo;</a>
-        <a href="" class="next">&raquo;</a>
-      </nav>
       <!-- end slideshow -->
             
     </div>
 
     <footer class="container">
       <div class="row">
-        <p class="span3"><img class="span1" src="img/ookblogo.png" /><!-- END LOGO -->
-An Office of Kristian Bj&oslash;rnard project</p>
+        <p class="span3"><img class="span1 nm" src="img/ookblogo.png" /><!-- END LOGO -->An <a href="http://www.ookb.co/">Office of Kristian Bj&oslash;rnard</a> project</p>
         <p class="span3">&copy; 2009&ndash;2013 Kristian Bj&oslash;rnard</p>
         <p class="span3">All content on this site (unless otherwise noted) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
         <p class="span3">
@@ -199,13 +196,12 @@ An Office of Kristian Bj&oslash;rnard project</p>
     <!-- Slideshow Controls -->
     <script>
       $('#main .slideshow')
-        .after(function(){$(this).parent().after('<div id="pager">') })
+        .before(function(){$(this).parent().before('<div id="pager">') })
         .cycle({ 
           fx:    'fade',
           speed: 500,
           timeout: 0,
-          next: '#main .ssnav .next',
-          prev: '#main .ssnav .prev',
+          next:   '.slideshow', 
           pager: '#pager' 
       });
     </script>  
