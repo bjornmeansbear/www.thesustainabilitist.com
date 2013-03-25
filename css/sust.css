@@ -34,7 +34,7 @@ purple        rgba(174,139,164,1)
 html {
   background: rgba(140,165,115,1);
   color: rgba(47,41,38,1) !important;
-  min-height: 101%;
+  height: 101%;
   /**/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
