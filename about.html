@@ -32,7 +32,7 @@
   
   </head>
   
-  <body class="visuals">
+  <body class="home">
 
     <!-- Nav!
     ================================================== -->
@@ -47,10 +47,10 @@
           <a class="brand" href="index.html">The Sustainabilitist.</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="index.html">Manifesto</a></li>
+              <li><a class="active" href="index.html">Manifesto</a></li>
               <li><a href="http://library.thesustainabilitist.com/">Library</a></li>
-              <li class="active"><a href="visuals.html">Visuals</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="visuals.html">Visuals</a></li>
+              <li class="active"><a href="about.html">About</a></li>
 <!--               <li><a href="http://www.ookb.co/TK">Writing</a></li> -->
             </ul>
           </div><!--/.nav-collapse -->
@@ -59,56 +59,17 @@
     </nav>
     <!-- END NAV
     ================================================== -->
-      
+    
     <header class="container">
-      <h1 class="">Sustainabilitist Visualizations</h1><!-- END decorative SITE NAME -->
+      <h1 class="">The Sustainabilitist</h1><!-- END decorative SITE NAME -->
     </header>
 
     <div id="main" role="main" class="container">
 
-      <!-- main visualization slideshow -->
-      <div class="row ss">
-        <div class="slideshow span12">
-
-          <!-- The Greenest Green -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/greenestgreen.jpg" /></section>
-            <h2 class="span3">The Greenest Green</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END TGG -->
-
-          <!-- **************** -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/understandingsust-action.jpg" /></section>
-            <h2 class="span3">Understanding Sustainability: Actions</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END -->
-
-          <!-- **************** -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/understandingsust-philosophy.jpg" /></section>
-            <h2 class="span3">Understanding Sustainability: Philosophy</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END -->
-
-          <!-- **************** -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/whatdoessustgdlooklike.jpg" /></section>
-            <h2 class="span3">What Does Sustainable Graphic Design Look Like?</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END -->
-
-        </div>
+      <!-- main homepage slideshow -->
+      <div class="row">
+        <p class="span12">TK</p>
       </div>
-      <!-- end slideshow -->
             
     </div>
 
@@ -137,29 +98,6 @@
     <script src="js/jquery.cycle.all.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
-    <!-- Slideshow Controls -->
-    <script>
-      $('#main .slideshow')
-        .before(function(){$(this).parent().before('<div id="pager">') })
-        .cycle({ 
-          fx:    'fade',
-          speed: 500,
-          timeout: 0,
-          next:   '.slideshow', 
-          pager: '#pager' 
-      });
-    </script>  
-        
-    <!-- scroll page down to elements and IDs -->
-    <script>
-      // Some Custom JS for the site
-      // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
-      $(".scroll").click(function(event){    
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
-      });
-    </script>
-
     <!-- end scripts-->
   
   </body>
