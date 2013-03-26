@@ -31,22 +31,17 @@ purple        rgba(174,139,164,1)
 
 * {}
 
+html, body {height: 100%;}
+
 html {
-  background: rgba(140,165,115,1);
-  color: rgba(47,41,38,1) !important;
-  height: 101%;
-  /**/
+  color: rgba(140,165,115,1) !important;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: rgba(132,132,120,1);
-  border: 2px solid rgba(197,192,101,1);
-  color: rgba(47,41,38,1) !important;
-  margin: 20px;
-  min-height: 101% !important;
-  padding: 0;
+  background: white;
+  color: rgba(140,165,115,1) !important;
 }
 
 nav ul {
@@ -63,7 +58,7 @@ header {
 #main {}
 
 footer {
-  border-top: 6px solid rgba(47,41,38,1); 
+  border-top: 6px solid rgba(194,211,186,1); 
   margin-top: 72px;
   margin-bottom: 72px;
   padding-top: 24px;
@@ -108,17 +103,13 @@ header h1 {
 /* =================================================================== */
 
 #main { min-height: 500px; }
-
 .ss, .slideshow         { }
-.home .placeholder      { overflow: hidden; }
-.placeholder.red        { background: rgba(183,80,81,1); }
-.placeholder.orange     { background: rgba(195,115,99,1); }
-.placeholder.yellow     { background: rgba(197,192,101,1); }
-.placeholder.green      { background: rgba(140,165,115,1); }
-.placeholder.blue       { background: rgba(157,178,176,1); }
-.placeholder.purple     { background: rgba(174,139,164,1); }
-.placeholder.gray       { background: rgba(132,132,120,1); }
-.placeholder.span10.nm  { margin: 0;}
+
+.visuals #main, 
+.visuals #main .ss, 
+.visuals #main .slideshow { 
+  min-height: 555px;
+}
 
 #pager {
   margin: 36px 0 48px 0;
@@ -129,7 +120,7 @@ header h1 {
 }
 
 #pager a {
-  background: rgba(96,103,103,1);
+  background: rgba(194,211,186,1);
   border: none;
   display: inline-block;
   height: 20px;
@@ -163,7 +154,7 @@ header h1 {
 /* =================================================================== */
 
 a {
-  color: rgba(47,41,38,1);
+  color: rgba(194,211,186,1);
   text-decoration: none;
   background: rgba(132,132,120,.1);
   border-bottom: 1px solid rgba(140,165,115,1);
