@@ -185,6 +185,20 @@ nav {
   border-bottom: 2px solid rgba(197,192,101,1);
 }
 
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus {
+  background: rgba(197,192,101,1);
+}
+
+.navbar .brand, 
+.navbar .nav > li > a {
+  border: none;
+}
+
+.navbar ul.nav {
+  float:right;
+}
 /* = Slideshow Styles */
 /* =================================================================== */
 
