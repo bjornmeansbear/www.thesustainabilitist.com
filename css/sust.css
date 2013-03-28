@@ -40,6 +40,10 @@ yellow        rgba(197,192,101,1)
 green         rgba(140,165,115,1)
 blue          rgba(157,178,176,1)
 purple        rgba(174,139,164,1)
+
+the greenest green
+rgba(125,129,104,1)
+
 */
 
 * {}
@@ -80,7 +84,12 @@ header h1 span {
   text-transform: Capitalize;
 }
 
-.home #main { min-height: 500px; }
+.home #main { 
+  min-height: 500px;
+/*   background: rgba(125,129,104,1); */
+  margin-top: -50px;
+  padding-top: 48px;
+}
 
 footer {
   border-top: 6px solid rgba(140,165,115,1); 
@@ -97,13 +106,23 @@ footer img.nm {
   margin-top: -16px;
 }
 
+#landscape {
+  position: relative;
+  height: 370px !important;
+  margin-top: -200px;
+  width: 2220px;
+  max-width: 2220px;
+  z-index: -999;
+}
+
+
 /* = Links and More */
 /* =================================================================== */
 
 a {
-  color: rgba(194,211,186,1);
+  color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgba(140,165,115,1);
+  border-bottom: 1px solid rgba(197,192,101,1);
   padding: 1px 2px 1px 2px;
   transition: all 500ms;
   -webkit-transition: all 500ms;
@@ -113,7 +132,7 @@ a {
 }
 
 a:hover { 
-  background: rgba(140,165,115,1);
+  background: rgba(197,192,101,1);
   color: white;
   text-decoration: none;
   }
@@ -132,14 +151,14 @@ a:link {
 /* =================================================================== */
 
 nav.navbar-fixed-top .navbar-inner, 
-.navbar-inverse .btn-navbar, 
-.navbar-inverse .brand, 
+.navbar .btn-navbar, 
+.navbar .brand, 
 .navbar .btn-navbar .icon-bar, 
 .navbar .nav > .active > a, 
 .navbar .nav > .active > a:hover, 
 .navbar .nav > .active > a:focus,
-.navbar-inverse .nav > li > a,
-.navbar-inverse .btn-navbar {
+.navbar .nav > li > a,
+.navbar .btn-navbar {
   color: white !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -154,11 +173,11 @@ nav, nav .navbar-inner {
   border: none;
 }
 
-.navbar-inverse .btn-navbar {
+.navbar .btn-navbar {
   background: rgba(197,192,101,1);
 }
 
-.navbar-inverse .btn-navbar:hover {
+.navbar .btn-navbar:hover {
   background: rgba(197,192,101,.5);
 }
 
@@ -181,7 +200,7 @@ nav {
 }
 
 #pager {
-  margin: 36px 0 48px 0;
+  margin: 60px 0 48px 0;
   position: relative;
   text-align: center;
   z-index: 9;
@@ -219,7 +238,7 @@ nav {
 @media (min-device-width: 979px) and (min-width: 979px) {
   
   header {margin-top: 60px;}
-  
+  footer {padding-bottom: 60px;}
   /* 3. TYPOGRAPHY */
   /* =================================================================== */
   
@@ -251,7 +270,7 @@ nav {
   }
   
   #pager {
-    margin: 36px 0 48px 0;
+    margin: 0 0 48px 0;
     position: relative;
     text-align: center;
     z-index: 9;
