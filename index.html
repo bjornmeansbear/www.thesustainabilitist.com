@@ -63,7 +63,7 @@
     <!-- Header!
     ================================================== -->
     <header class="container">
-      <h1 class="">The <br/>Sustainabilitist <br/>Principles <br/><span>(A Manifesto)</span></h1><!-- END decorative SITE NAME -->
+      <h1 class="">The <br/>Sustainabilitist <br/>Principles <br/><span>(<a class="scroll" href="#aphorisms">A Manifesto</a>)</span></h1><!-- END decorative SITE NAME -->
     </header>
 
     <!-- Decoration!
@@ -76,7 +76,7 @@
     <div class="container">
 
       <!-- main homepage slideshow -->
-      <div class="row ss">
+      <div class="row ss" id="aphorisms">
         <div class="slideshow span12">
 
           <!-- INTRO TEXT -->
@@ -248,7 +248,7 @@
       // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
       $(".scroll").click(function(event){    
         event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
       });
     </script>
 
