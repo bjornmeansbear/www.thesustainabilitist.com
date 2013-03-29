@@ -3,8 +3,8 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
 @import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
 
-body, .opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
-.gentium { font-family: 'Gentium Book Basic', Georgia, serif; }
+body, .opensans { font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+.gentium        { font-family: 'Gentium Book Basic', Georgia, serif; }
 
 /* END @Font-Face */
 
@@ -85,8 +85,6 @@ header h1 span {
 }
 
 .home #main { 
-  min-height: 500px;
-/*   background: rgba(125,129,104,1); */
   margin-top: -50px;
   padding-top: 24px;
 }
@@ -216,12 +214,6 @@ nav {
   line-height: 1.5;
 }
 
-.visuals #main, 
-.visuals #main .ss, 
-.visuals #main .slideshow { 
-  min-height: 555px;
-}
-
 #pager {
   margin: 60px 0 48px 0;
   position: relative;
@@ -262,6 +254,7 @@ nav {
   
   header {margin-top: 60px;}
   footer {padding-bottom: 60px;}
+
   /* 3. TYPOGRAPHY */
   /* =================================================================== */
   
@@ -280,17 +273,6 @@ nav {
   
   /* = Slideshow Styles */
   /* =================================================================== */
-  
-  .home #main article {
-    font-size: 200%;
-    line-height: 1.5;
-  }
-  
-  .visuals #main, 
-  .visuals #main .ss, 
-  .visuals #main .slideshow { 
-    min-height: 555px;
-  }
   
   #pager {
     margin: 0 0 36px 0;
@@ -321,6 +303,7 @@ nav {
   #pager a.activeSlide { background: rgba(197,192,101,1); }
 
 }
+
 /* END min-device-width: 979px */
 /* =================================================================== */
 /* =================================================================== */
