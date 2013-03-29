@@ -50,7 +50,7 @@
 }
 
 .index .post:hover {
-  background-color: rgba(140,165,115,1);
+  background-color: rgba(197,192,101,.5);
   border-bottom: 10px solid rgba(140,165,115,1);
 }
 
@@ -80,6 +80,7 @@
   line-height: 24px;
   display: block;
   color: white;
+  overflow: hidden;
 }
 
 .tag #posts {
