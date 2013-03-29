@@ -2,29 +2,9 @@
 /* =================================================================== */
 /* =================================================================== */
 
-body {
-  font: normal 15px/21px Georgia, serif;
-  color: {color:Body Text};
-  padding: 0 0 36px;
-  background-color: {color:Background};
-  border-top: 10px solid {color:Border};
-}
-a {
-  text-decoration: none;
-  color: {color:Link Text};
-}
-a:hover {
-  border-bottom: 1px dotted #000;
-}
 #header_image:hover {
   border: none;
 }
-{block:IfFixedWidth}
-  #wrapper {
-    width: 940px;
-    margin: 0 auto;
-  }
-{/block:IfFixedWidth}
 #permalink,
 #page {
   width: 940px;
@@ -34,12 +14,6 @@ a:hover {
   padding: 48px 0px;
   text-align: center;
 }
-{block:IfNotShowTitleAndDescription}
-  #title, #description { display: none; }
-{/block:IfNotShowTitleAndDescription}
-{block:IfNotShowDescriptionOnPermalinkPages}
-  .permalink #description { display: none; }
-{/block:IfNotShowDescriptionOnPermalinkPages}
 #title {
   font: bold 15px/21px Arial, sans-serif;
   color: {color: Header Text};
@@ -71,7 +45,7 @@ a:hover {
 .index .post {
   height: 178px;
   width: 188px;
-  border-bottom: 10px solid {color:Shelf};
+  border-bottom: 10px solid rgba(140,165,115,1);
 }
 .post_thumbnail td {
   height: 178px;
@@ -81,15 +55,13 @@ a:hover {
 }
 .post_thumbnail img {
   vertical-align: bottom;
-  {block:IfDropShadowsOnCovers}
-    box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
-  {/block:IfDropShadowsOnCovers}
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
 }
 .index .post:hover {
-  background-color: {color:Hover Block};
-  border-bottom: 10px solid {color:Shelf};
+  background-color: rgba(140,165,115,1);
+  border-bottom: 10px solid rgba(140,165,115,1);
 }
 .index .post       .post_thumbnail { display: block; }
 .index .post       .post_title     { display: none; }
@@ -110,7 +82,7 @@ a:hover {
 .post_title h1,
 .post_title h1 a {
   display: block;
-  color: {color:Hover Block Text};
+  color: rgba(140,165,115,1);
 }
 .tag #posts {
   border-bottom: 1px solid {color:Border};
