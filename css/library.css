@@ -56,7 +56,7 @@
 
 .index .post .post_thumbnail       { display: block; }
 .index .post .post_title           { display: none; }
-.index .post:hover .post_thumbnail { display: none; }
+/* .index .post:hover .post_thumbnail { display: none; } */
 .index .post:hover .post_title     { display: block; }
 
 .post_title {
