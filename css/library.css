@@ -2,34 +2,19 @@
 /* =================================================================== */
 /* =================================================================== */
 
-#header_image:hover {
-  border: none;
-}
-
 #permalink,
 #page {
   width: 940px;
   margin: 0 auto;
 }
 
-#header {
-  padding: 48px 0px;
-  text-align: center;
-}
-
-#title {
-  font: bold 15px/21px Arial, sans-serif;
-  color: {color: Header Text};
-  margin-top: 1em;
-}
-
 #description {
-  margin: -200px 0 0 0;
+  margin: 0 0 25px 0;
 }
 
 #posts {
-  border-top: 1px solid {color:Border};
-  border-bottom: 1px solid {color:Border};
+  border-top: 1px solid rgba(140,165,115,1);
+  border-bottom: 1px solid rgba(140,165,115,1);
   padding: 30px 0px;
 }
 
@@ -102,12 +87,12 @@
 }
 
 .tag #posts {
-  border-bottom: 1px solid {color:Border};
+  border-bottom: 1px solid rgba(140,165,115,1);
 }
 
 #tag_label {
   padding: 36px 0px;
-  border-top: 1px solid {color:Border};
+  border-top: 1px solid rgba(140,165,115,1);
   text-align: center;
 }
 
