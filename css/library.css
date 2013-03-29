@@ -59,9 +59,10 @@
   -ms-transition: all 500ms;
 }
 
-index .post {position: relative;}
+#posts {position: relative;}
+.post {position: relative;}
 
-index .post * {
+.post * {
   transition: all 500ms;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
