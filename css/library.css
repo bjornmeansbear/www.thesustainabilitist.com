@@ -5,153 +5,188 @@
 #header_image:hover {
   border: none;
 }
+
 #permalink,
 #page {
   width: 940px;
   margin: 0 auto;
 }
+
 #header {
   padding: 48px 0px;
   text-align: center;
 }
+
 #title {
   font: bold 15px/21px Arial, sans-serif;
   color: {color: Header Text};
   margin-top: 1em;
 }
+
 #description {
   width: 368px;
   margin: 16px auto 0px;
 }
+
 #posts {
   border-top: 1px solid {color:Border};
   border-bottom: 1px solid {color:Border};
   padding: 30px 0px;
 }
+
 #posts:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
+
 .post {
   float: left;
   margin: 30px 0px;
 }
+
 .index #posts {
   border-bottom: none;
 }
+
 .index .post {
   height: 178px;
   width: 188px;
   border-bottom: 10px solid rgba(140,165,115,1);
 }
+
 .post_thumbnail td {
   height: 178px;
   width: 188px;
   vertical-align: bottom;
   text-align: center;
 }
+
 .post_thumbnail img {
   vertical-align: bottom;
   box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 12px;
 }
+
 .index .post:hover {
   background-color: rgba(140,165,115,1);
   border-bottom: 10px solid rgba(140,165,115,1);
 }
-.index .post       .post_thumbnail { display: block; }
-.index .post       .post_title     { display: none; }
+
+.index .post .post_thumbnail       { display: block; }
+.index .post .post_title           { display: none; }
 .index .post:hover .post_thumbnail { display: none; }
 .index .post:hover .post_title     { display: block; }
+
 .post_title {
   font-family: Helvetica, Arial, sans-serif;
   padding: 10px;
   height: 158px;
   width: 168px;
 }
+
 .post_title:hover {
   border-bottom: none;
 }
+
 .post_title * {
   display: none;
 }
+
 .post_title h1,
 .post_title h1 a {
   display: block;
   color: rgba(140,165,115,1);
 }
+
 .tag #posts {
   border-bottom: 1px solid {color:Border};
 }
+
 #tag_label {
   padding: 36px 0px;
   border-top: 1px solid {color:Border};
   text-align: center;
 }
+
 #tag_label h2 {
   font: bold 2em/1.33em Helvetica, Arial, sans-serif;
-  color: {color:Header Text};
+  color: rgba(140,165,115,1);
 }
+
 p {
   margin-bottom: 0.6em;
 }
+
 #meta, #cover, #caption {
   float: left;
   margin: 0 36px 0 0;
   min-height: 1px;
 }
+
 #meta {
   width: 100px;
 }
+
 #cover {
   width: 420px;
 }
+
 #caption {
   width: 348px;
   margin-right: 0px;
 }
+
 #caption h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: {color:Header Text};
+  color: rgba(140,165,115,1);
 }
+
 #caption h2 {
   font-style: italic;
   margin-bottom: 1em;
 }
+
 h3, h4 {
   font-family: Helvetica, Arial, sans-serif;
-  color: {color:Header Text};
+  color: rgba(140,165,115,1);
 }
+
 h4 {
   margin-top: 1em;
 }
+
 #caption #purchase {
   font-family: Helvetica, Arial, sans-serif;
   margin-top: 1em;
 }
+
 #page {
   width: 564px;
   padding: 0px 188px;
 }
+
 #page p {
   font-size: 1.5em;
   line-height: 1.33;
 }
+
 #nav,
 #footer,
 #credit {
   text-align: center;
   padding: 36px 0px;
 }
+
 #nav,
 #credit {
   font-family: Helvetica, Arial, sans-serif;  
 }
+
 #infscr-loading {
   position: absolute;
   top: 0;
