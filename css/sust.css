@@ -107,7 +107,7 @@ footer img.nm {
 #landscape {
   position: relative;
   height: 370px !important;
-  margin: 0;
+  margin: 0 -30px;
   margin-top: -195px;
   overflow: hidden;
   padding: 0;
