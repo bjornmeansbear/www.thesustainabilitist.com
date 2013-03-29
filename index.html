@@ -254,9 +254,13 @@
       // size the height of the slideshow correctly
       $(document).ready(function() {
         $("#aphorisms").height($(".description").height() + 36);
+        $("#landscape").width($(window).width() + 60);
       });
 
-
+      $(window).resize(function() {
+        $("#aphorisms").height($(".description").height() + 36);
+        $("#landscape").width($(window).width() + 60);
+      });
     </script>
 
     <!-- end scripts-->
