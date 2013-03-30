@@ -16,7 +16,8 @@
 }
 
 #landscape {
-  margin: -145px -30px -50px -30px !important;
+  margin-top: -115px !important;
+  margin-bottom: -95px !important;
 }
 
 #posts {
