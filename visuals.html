@@ -138,6 +138,7 @@
     <script src="js/jquery.cycle.all.js"></script>
     <script src="js/jquery.masonry.js"></script>
     <script src="js/jquery.imagesloaded.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <!-- Slideshow Controls -->
@@ -187,6 +188,10 @@
       $("#masonry li img").each(function () {
         $(this).wrap("<a class='popup' href='" + $(this).attr('src') + "'></a>");
       });
+    </script>
+    
+    <script>
+      $('a.popup').colorbox({rel:'gal'});
     </script>
 
   
