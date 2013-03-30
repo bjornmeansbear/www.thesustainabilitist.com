@@ -15,6 +15,10 @@
   line-height: 24px;
 }
 
+#landscape {
+  margin: -145px -30px -50px -30px !important;
+}
+
 #posts {
   border-bottom: 1px solid rgba(140,165,115,1);
 }
