@@ -73,54 +73,40 @@
     <!-- Main!
     ================================================== -->
     <div id="main" role="main">
-    <div class="container">
-
-      <!-- main visualization slideshow -->
-      <div class="row ss">
-        <div class="slideshow span12">
-
-          <!-- The Greenest Green -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/greenestgreen.jpg" /></section>
-            <h2 class="span3">The Greenest Green</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END TGG -->
-
-          <!-- **************** -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/understandingsust-action.jpg" /></section>
-            <h2 class="span3">Understanding Sustainability: Actions</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END -->
-
-          <!-- **************** -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/understandingsust-philosophy.jpg" /></section>
-            <h2 class="span3">Understanding Sustainability: Philosophy</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END -->
-
-          <!-- **************** -->
-          <article class="description row">
-            <section class="span4"><img src="img/visuals/whatdoessustgdlooklike.jpg" /></section>
-            <h2 class="span3">What Does Sustainable Graphic Design Look Like?</h2>
-            <aside class="span5">
-              <p>Lorem ipsum dolor sit amet adis plicit amit veritas nour sanctas qui enom.</p>
-            </aside>
-          </article><!-- END -->
-
+      <div class="container">
+  
+        <!-- main visualization array (and popup slideshow?) -->
+        <div class="row">
+          <ul id="masonry">
+            <li class="span2"><img src="img/visuals/4857362271_40e9f1ffb6_b.jpg" /></li><!-- BLTS -->
+            <li class="span2"><img src="img/visuals/greenestgreen.jpg" /></li>
+            <li class="span2"><img src="img/visuals/understandingsust-action.jpg" /></li>
+            <li class="span2"><img src="img/visuals/understandingsust-philosophy.jpg" /></li>
+            <li class="span2"><img src="img/visuals/whatdoessustgdlooklike.jpg" /></li>
+            <li class="span2"><img src="img/visuals/4426654518_ffcb98e658_b.jpg" /></li> <!-- What does SGD look like -->
+            <li class="span2"><img src="img/visuals/4433647723_0bac4e6ac5_b.jpg" /></li> <!-- eco friendly -->
+            <li class="span2"><img src="img/visuals/4434422776_38a0d56a0e_b.jpg" /></li> <!-- the same -->
+            <li class="span2"><img src="img/visuals/4434425136_0788f7dd72_b.jpg" /></li> <!-- innovative -->
+            <li class="span2"><img src="img/visuals/4436521303_79aee2d18f_b.jpg" /></li> <!-- does not exist -->
+            <li class="span2"><img src="img/visuals/entropy.jpg" /></li><!-- entropy -->
+            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
+            <li class="span2"><img src="img/visuals/sust-soc.jpg" /></li>
+            <li class="span2"><img src="img/visuals/5084490584_5fdfaf6aca_b.jpg" /></li> <!-- rockets/ozone holes -->
+            <li class="span2"><img src="img/visuals/5082736576_935c4713dc_b.jpg" /></li> <!-- create posibilities -->
+            <li class="span2"><img src="img/visuals/4727475559_881dab57f3_b.jpg" /></li> <!-- constraints/sacrifices -->
+            <li class="span2"><img src="img/visuals/4708304248_5c62777dcd_b.jpg" /></li> <!-- pushed the earth's carrying capacity -->
+            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
+            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
+            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
+            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
+          </ul>
+          <br class="clear" />
         </div>
+
+      <br class="clear" />              
       </div>
-      <!-- end slideshow -->
-            
     </div>
-    </div>
+
 
     <footer class="container">
       <div class="row">
@@ -166,10 +152,39 @@
       // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
       $(".scroll").click(function(event){    
         event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
       });
-    </script>
 
+      // size the landscape correctly
+      $(document).ready(function() {$("#landscape").width($(window).width() + 60);});
+      $(window).resize(function() {$("#landscape").width($(window).width());});
+
+      //$(document).ready(function() {
+        //$(".masonry-brick").each(function() {
+          //$(this).height($(this).find("img").height());
+       // });
+        
+        //$(".masonry-brick").find("img").each(function() {
+          //$(this).height();
+        //});
+      //});
+
+    </script>
+    
+    <!-- CUSTOM JS CAN GO IN HERE -->
+    <script src="js/jquery.masonry.js"></script>
+    <!-- Masonry Layouts -->
+    <script>
+      $('#masonry').masonry({
+        itemSelector: "li",
+        columnWidth: 100,
+      });
+
+  </script>
+
+  
+    <!-- end scripts-->
+  
     <!-- Google Analytics -->
     <!-- ================================================== -->
     <!-- Currently connected to the BLTS analytics account, I should create a new Sust. one eventually -->

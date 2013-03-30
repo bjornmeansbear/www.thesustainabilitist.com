@@ -48,6 +48,10 @@ rgba(125,129,104,1)
 
 * {}
 
+.left {float:left;}
+.right { float: right;}
+.clear {clear:both;}
+
 html, body {height: 100%;}
 
 html {
@@ -120,7 +124,6 @@ footer img.nm {
   width: 2220px;
   max-width: 2220px;
 }
-
 
 /* = Links and More */
 /* =================================================================== */
@@ -242,7 +245,27 @@ nav {
 #pager a.activeSlide { background: rgba(197,192,101,1); }
 
 
+/* = Slideshow Styles */
+/* =================================================================== */
 
+/* Masonry stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+#masonry {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#masonry li {
+  margin: 0 0 30px 30px;
+}
+
+#masonry img {
+  max-height: 255px;
+  min-height:85px;
+}
 
 
 
