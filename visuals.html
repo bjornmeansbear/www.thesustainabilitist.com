@@ -166,28 +166,28 @@
       $(document).ready(function() {$("#landscape").width($(window).width() + 60);});
       $(window).resize(function() {$("#landscape").width($(window).width());});
 
-      $(window).load(function() {
-        $("li.masonry-brick").each(function() {
-          $(this).height($(this).children("img").height());
-        });
-      });
-
     </script>
     
-    <!-- CUSTOM JS CAN GO IN HERE -->
     <!-- Masonry Layouts -->
     <script>
-    var $container = $('#masonry');
-    $container.imagesLoaded(function(){
-      $container.masonry({
-        itemSelector : 'li',
-        // set columnWidth a fraction of the container width
-        columnWidth: function( containerWidth ) {
-          return containerWidth / 12;
-        }
+      var $container = $('#masonry');
+      $container.imagesLoaded(function(){
+        $container.masonry({
+          itemSelector : 'li',
+          // set columnWidth a fraction of the container width
+          columnWidth: function( containerWidth ) {
+            return containerWidth / 12;
+          }
+        });
       });
-    });
-  </script>
+    </script>
+
+    <!-- modal image slideshow stuff -->
+    <script>
+      $("#masonry li img").each(function () {
+        $(this).wrap("<a class='popup' href=" + $(this).attr("src") + "'></a>");
+      });
+    </script>
 
   
     <!-- end scripts-->
