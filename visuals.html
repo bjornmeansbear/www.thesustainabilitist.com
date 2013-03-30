@@ -77,7 +77,7 @@
   
         <!-- main visualization array (and popup slideshow?) -->
         <div class="row">
-          <ul id="masonry">
+          <ul>
             <li class="span2"><img src="img/visuals/4857362271_40e9f1ffb6_b.jpg" /></li><!-- BLTS -->
             <li class="span2"><img src="img/visuals/greenestgreen.jpg" /></li>
             <li class="span2"><img src="img/visuals/understandingsust-action.jpg" /></li>
@@ -91,19 +91,24 @@
             <li class="span2"><img src="img/visuals/entropy.jpg" /></li><!-- entropy -->
             <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
             <li class="span2"><img src="img/visuals/sust-soc.jpg" /></li>
+            <li class="span2"><img src="img/visuals/4402691839_87f310fb8d_b.jpg" /></li> <!-- principles/bookshelf -->
+            <li class="span2"><img src="img/visuals/4404112809_cfb81f8cbf_b.jpg" /></li> <!-- NOT environmentalist -->
             <li class="span2"><img src="img/visuals/5084490584_5fdfaf6aca_b.jpg" /></li> <!-- rockets/ozone holes -->
             <li class="span2"><img src="img/visuals/5082736576_935c4713dc_b.jpg" /></li> <!-- create posibilities -->
             <li class="span2"><img src="img/visuals/4727475559_881dab57f3_b.jpg" /></li> <!-- constraints/sacrifices -->
             <li class="span2"><img src="img/visuals/4708304248_5c62777dcd_b.jpg" /></li> <!-- pushed the earth's carrying capacity -->
-            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
-            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
-            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
-            <li class="span2"><img src="img/visuals/timelessarch.jpg" /></li>
+            <li class="span2"><img src="img/visuals/4682707490_7c6ee715ca_b.jpg" /></li> <!-- kill consumerism -->
+            <li class="span2"><img src="img/visuals/4600631024_e0bf658f05_b.jpg" /></li> <!-- vernacular principles -->
+            <li class="span2"><img src="img/visuals/4522122781_f9fe2c4594_b.jpg" /></li> <!-- keys to sust. are in here somewhere -->
+            <li class="span2"><img src="img/visuals/4496058204_e8c22f6042_b.jpg" /></li> <!-- water, plenty to use none to waste -->
+            <li class="span2"><img src="img/visuals/4444250413_4287d05f07_b.jpg" /></li> <!-- sust for GD -->
+            <li class="span2"><img src="img/visuals/4423575544_9aceec7cbc_b.jpg" /></li> <!-- diverse solutions -->
+            <li class="span2"><img src="img/visuals/4422382987_dbea9da724_b.jpg" /></li> <!-- integrate living/mechanical systems -->
+            <li class="span2"><img src="img/visuals/4408899075_1103a6b303_b.jpg" /></li> <!-- progress -->
+            <li class="span2"><img src="img/visuals/4348324220_2214e82f86_b.jpg" /></li> <!-- simplicity/sustainability -->
           </ul>
-          <br class="clear" />
         </div>
 
-      <br class="clear" />              
       </div>
     </div>
 
@@ -159,15 +164,11 @@
       $(document).ready(function() {$("#landscape").width($(window).width() + 60);});
       $(window).resize(function() {$("#landscape").width($(window).width());});
 
-      //$(document).ready(function() {
-        //$(".masonry-brick").each(function() {
-          //$(this).height($(this).find("img").height());
-       // });
-        
-        //$(".masonry-brick").find("img").each(function() {
-          //$(this).height();
-        //});
-      //});
+      $(window).load(function() {
+        $("li.masonry-brick").each(function() {
+          $(this).height($(this).children("img").height());
+        });
+      });
 
     </script>
     
@@ -175,7 +176,7 @@
     <script src="js/jquery.masonry.js"></script>
     <!-- Masonry Layouts -->
     <script>
-      $('#masonry').masonry({
+      $('#main ul').masonry({
         itemSelector: "li",
         columnWidth: 100,
       });

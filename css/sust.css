@@ -252,19 +252,19 @@ nav {
 /* =================================================================== */
 /* =================================================================== */
 
-#masonry {
+#main ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#masonry li {
+#main ul li {
   margin: 0 0 30px 30px;
 }
 
-#masonry img {
-  max-height: 255px;
-  min-height:85px;
+#main ul li,
+#main ul li img {
+  height: auto
 }
 
 
