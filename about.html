@@ -108,6 +108,31 @@
     <script src="js/jquery.cycle.all.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
+    <script>      
+      var minimizedp = $('#main p.span4');
+      
+      $(minimizedp).each(function(){    
+        var t = $(this).text();
+        
+        if(t.length < 100) return;
+        
+        $(this).html(
+            t.slice(0,100)+'<a href="#" class="more">...</a><span style="display:none;">'+ t.slice(100,t.length)+' <a href="#" class="less">-</a></span>'
+        );
+        
+      }); 
+      
+      $('a.more', minimizedp).click(function(event){
+        event.preventDefault();
+        $(this).hide();
+        $(this).next().show();        
+      });
+      
+      $('a.less', minimizedp).click(function(event){
+        event.preventDefault();
+        $(this).parent().hide().prev().show();    
+      });
+    </script>
     <!-- end scripts-->
   
     <!-- Google Analytics -->

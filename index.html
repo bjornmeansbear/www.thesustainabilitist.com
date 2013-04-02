@@ -77,12 +77,12 @@
 
       <!-- main homepage slideshow -->
       <nav id="arrowkeys" class="controls">
-        <a href="#" class="prev control">&laquo;&laquo;&laquo;&laquo;</a>
-        <a href="#" class="next control">&raquo;&raquo;&raquo;&raquo;</a>
+        <a href="#" class="prev control">&laquo;&laquo;&laquo;</a>
+        <a href="#" class="next control">&raquo;&raquo;&raquo;</a>
       </nav>
       
       <div class="row ss" id="aphorisms">
-        <div class="slideshow span12">
+        <div class="slideshow span12 next">
 
           <!-- INTRO TEXT -->
           <article class="description span12 nm" id="explain">
@@ -247,13 +247,12 @@
       $('#main .slideshow')
         .before(function(){$(this).parent().before('<div id="pager">') })
         .cycle({ 
-          fx:    'fade',
-          speed: 500,
+          fx:     'fade',
+          speed:   500,
           timeout: 0,
-          next:   '.slideshow', 
-          pager: '#pager',
-          prev: '#arrowkeys a.prev',
-          next: '#arrowkeys a.next'
+          pager:  '#pager',
+          prev:   '#arrowkeys a.prev',
+          next:   '.next'
       });
     </script>  
         

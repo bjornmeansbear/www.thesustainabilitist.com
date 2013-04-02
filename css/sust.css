@@ -261,11 +261,13 @@ nav {
 }
 
 #arrowkeys {
+  color:rgba(194,211,186,1);
   position: relative;
   margin-bottom: -20px;
 }
 
 #arrowkeys a.control {
+  color:rgba(194,211,186,1);
   position: absolute;
   z-index: 9999;  
 }
