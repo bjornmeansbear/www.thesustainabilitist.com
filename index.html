@@ -76,6 +76,11 @@
     <div class="container">
 
       <!-- main homepage slideshow -->
+      <nav id="arrowkeys" class="controls">
+        <a href="#" class="prev control">&laquo;&laquo;&laquo;&laquo;</a>
+        <a href="#" class="next control">&raquo;&raquo;&raquo;&raquo;</a>
+      </nav>
+      
       <div class="row ss" id="aphorisms">
         <div class="slideshow span12">
 
@@ -246,7 +251,9 @@
           speed: 500,
           timeout: 0,
           next:   '.slideshow', 
-          pager: '#pager' 
+          pager: '#pager',
+          prev: '#arrowkeys a.prev',
+          next: '#arrowkeys a.next'
       });
     </script>  
         

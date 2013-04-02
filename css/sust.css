@@ -250,6 +250,36 @@ nav {
 #pager a:hover { background: rgba(140,165,115,1); }
 #pager a.activeSlide { background: rgba(197,192,101,1); }
 
+.slideshow article {cursor: pointer;}
+
+#arrowkeys, #arrowkeys a.control {
+  background: transparent !important;
+  border: none;
+  font-size: 36px;
+  line-height: 10px;
+  height: 20px;
+}
+
+#arrowkeys {
+  position: relative;
+  margin-bottom: -20px;
+}
+
+#arrowkeys a.control {
+  position: absolute;
+  z-index: 9999;  
+}
+
+#arrowkeys a:hover { color: rgba(197,192,101,1) !important; }
+
+#arrowkeys a.prev {
+  left:0;
+}
+
+#arrowkeys a.next {
+  right: 0;
+}
+
 
 /* = Slideshow Styles */
 /* =================================================================== */
