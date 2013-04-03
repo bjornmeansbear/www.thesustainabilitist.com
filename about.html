@@ -106,32 +106,6 @@
     <script src="js/bootstrap.js"></script>
 <!--     <script src="http://malsup.github.com/jquery.cycle.all.js"></script> -->
     <script src="js/jquery.cycle.all.js"></script>
-
-    <!-- CUSTOM JS CAN GO IN HERE -->
-    <script>      
-      $('#main p.span4').each(function(){    
-        var t = $(this).text();
-        
-        if(t.length < 100) return;
-        
-        $(this).html(
-            t.slice(0,100)+' <a href="#" class="more"> ...</a><span style="display:none;">'+ t.slice(100,t.length)+' <a href="#" class="less">-</a></span>'
-        );
-        
-      }); 
-      
-      $('a.more').click(function(event){
-        event.preventDefault();
-        $(this).toggle();
-        $(this).next().toggle();
-      });
-      
-      $('a.less').click(function(event){
-        event.preventDefault();
-        $(this).parent().toggle().prev().toggle();
-      });
-    </script>
-    <!-- end scripts-->
   
     <!-- Google Analytics -->
     <!-- ================================================== -->
