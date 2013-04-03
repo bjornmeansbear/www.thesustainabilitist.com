@@ -122,13 +122,13 @@
       
       $('a.more').click(function(event){
         event.preventDefault();
-        $(this).hide();
-        $(this).next().show();        
+        $(this).toggle();
+        $(this).next().toggle();
       });
       
       $('a.less').click(function(event){
         event.preventDefault();
-        $(this).parent().hide().prev().show();    
+        $(this).parent().toggle().prev().toggle();
       });
     </script>
     <!-- end scripts-->
