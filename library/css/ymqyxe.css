@@ -12,6 +12,7 @@
 .bg-purple             { background-color: rgba(174,139,164,1); }
 .bg-black              { background-color: rgba(000,000,000,1); }
 .bg-white              { background-color: rgba(255,255,255,1); }
+.bg-trans              { background: transparent; }
 
 .bg-pink-hover:hover        { background-color: rgba(236,064,121,1); }
 .bg-brown-hover:hover       { background-color: rgba(047,041,038,1); }
@@ -26,6 +27,7 @@
 .bg-purple-hover:hover      { background-color: rgba(174,139,164,1); }
 .bg-black-hover:hover       { background-color: rgba(000,000,000,1); }
 .bg-white-hover:hover       { background-color: rgba(255,255,255,1); }
+.bg-trans:hover             { background-image: none; }
 
 .pink                  { color: rgba(236,064,121,1); }
 .brown                 { color: rgba(047,041,038,1); }
