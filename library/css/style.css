@@ -287,10 +287,12 @@ a {
 .book .caption,
 .caption h1 {
   font-size: .8rem;
+  line-height: 1.25;
 }
 .book .caption > p,
 .book .caption > div {
   display: none;
+  line-height: 1.25;
 }
 .bookWrapper {
   position: relative;
@@ -304,18 +306,22 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  color: #c5c065;
+  color: white;
   background-color: rgba(140, 165, 115, 0.8);
+  line-height: 1.25;
 }
 .book:hover .caption {
   display: block;
+  line-height: 1.25;
 }
 .caption h1 {
   font-style: italic;
+  line-height: 1.25;
 }
 .caption h2 {
   font-size: .7rem;
   font-weight: normal;
+  line-height: 1.25;
 }
 .mono,
 .tag,
